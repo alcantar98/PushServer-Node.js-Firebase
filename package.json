@@ -1,14 +1,16 @@
 {
-  "name": "yisus",
+  "name": "chuy",
   "version": "1.0.0",
   "main": "fcm.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "author": "JuanJesus",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "express": "^4.18.1",
     "fcm-node": "^1.3.0"
   }
 }

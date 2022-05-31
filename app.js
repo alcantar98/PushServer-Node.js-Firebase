@@ -1,22 +1,22 @@
 var FCM = require("fcm-node");
 var serverKey =
-  "AAAA0q58IDw:APA91bGF562tG5eGcy_gxKxJZxZzqkhZ6U1lSpOrvyZ81OPMoaj-IjlgA1CmEV3FCZcRJwp4T7TnCkBg28BKFDSaoOXZeXBlbrcHPA5JrU4WF1XVKyC0mg1RD4DmLJoWDawskTYrB9rq"; // * Llave del servidor
+  "AAAAM1P2X3U:APA91bFIkr2b1ECU_3UOQamRT4mIJDdZis6-MjtmDHtTYlvtg3ICzq1ZAvaBoyIUEbsO9cqRpP9IFJmG50GboHnD0MzJltBiu90RgovEOiiSm_WybUVzcQDQywUQ2_kfkZKM7M5NnB0M"; // * Llave del servidor
 //! ESTA ES LA LLAVES DE FIREBASE UNICA
 var fcm = new FCM(serverKey);
 
 var message = {
   //! ESTE ID ES UNICO PARA CADA USUARIO
-  to: "AAAAKsju7qE:APA91bEd2lQgIIIm9KER65jkD3BXWi2xdsigCa62XU9dpIvwD4yuoKJm_17EWZjgHuST7WLi70ma92kYuGIrtyIMVtHjlxOa2omWIwO_ieemJWbBIUCid5cRgU3_kH8EQRQLYeonQMHN", // * ID DEL DISPOSITIVO UNICO
+  to: "eKUZxx09RAysz6i5CDvq0U:APA91bFjIQRg2aTtvmGAvkJcf12ANUm2tyMXi_iHw_uHVOeVVAzsEn-_l7wkgCJhJngZ0QtXynAvSU1cjPW_71IVsEQBxoLe7U88pQvUCjgKsDbbFEDx5ClzTbLFwQmSIaJHRMpN0YFl", // * ID DEL DISPOSITIVO UNICO
   notification: {
     title: "Notificacion de prueba NodeJS",
-    body: "Este mensaje de prueba se mando desde NODEJS",
+    body: "Mensaje de prueba mandado desde NODEJS. Para mi Mota",
     sound: "default",
   },
 
   data: {
     // * Puede ser cualquier dato que se desee enviar al dispositivo desde el servidor a traves de la notificacion push de firebase cloud messaging (FCM)
-    title: "¡Hola Este es firebase CMS!",
-    body: "Hola",
+    title: "¡Notify firebase Server!",
+    body: "Hola mensaje de servidor",
   },
 };
 
